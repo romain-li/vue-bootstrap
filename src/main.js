@@ -12,7 +12,6 @@ import register from './components/register.vue'   //注册
 import list from './components/list.vue'  //列表页
 import listDetail from './components/list-detail.vue'  //列表详情页
 import registerResult from './components/register-result.vue' //登录/注册  结果
-// import Hello from './components/Hello.vue' //测试
 
 
 //引入router插件
@@ -43,10 +42,6 @@ router.map({
 
     }
   },
-/*  'hello': {
-    name: 'Hello',
-    component: Hello
-  },*/
   'login': {
     name: 'login',
     component: login,
