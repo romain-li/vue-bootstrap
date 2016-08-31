@@ -7,7 +7,7 @@
     </ol>
     <div class="carousel-inner" role="listbox" style="width:100%;">
         <div class="carousel-item active">
-          <a v-link="">
+          <a>
             <img class="slide-img" src="../assets/ad.jpg" alt="">
             <div class="carousel-caption">
               <h1>薛之谦薛之谦薛之谦薛之谦薛之谦薛之谦薛之谦薛之谦</h1>
@@ -25,7 +25,7 @@
       <div class="carousel-item">
         <img class="slide-img" src="../assets/aa.jpg" alt="">
         <div class="carousel-caption">
-          <h1>鹿晗鹿晗鹿晗</h1>
+          <h1>鹿晗鹿鹿晗</h1>
           <h2>啦啦啦~</h2>
         </div>
       </div>
@@ -37,6 +37,7 @@
       <span class="icon-next" aria-hidden="true"></span>
     </a>
   </div>
+  <input v-model="msg">
 </template>
 
 <style>
@@ -50,3 +51,9 @@
     height: 760px!important;
   }
 </style>
+
+<script>
+  export default {
+    props: ['msg']
+  }
+</script>

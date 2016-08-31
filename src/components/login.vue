@@ -21,6 +21,8 @@
         </div>
       </div>
       <p>{{detail}}</p>
+      <h1>{{ds}}</h1>
+      <input v-model="ds" @change="change">
     </form>
     <router-view></router-view>
   </div>
@@ -39,6 +41,7 @@
   export default {
     ready () {     //当页面加载完成去请求
 //      console.log(this.$router)
+//      console.log(this.$parent)
     },
     components: {
       test
@@ -51,7 +54,8 @@
     data() {
       return {
         userName: '2323',
-        userPaw: '123123'
+        userPaw: '123123',
+        ds:this.$parent.ds  //获取父元素的ds
       }
     },
     route: {   //可以设置路由的钩子函数
@@ -63,8 +67,10 @@
       },
       goRegisrer: function () {
         router.go({name: 'register'});
+      },
+      change:function () {    //改变给父组件数据
+        console.log(this.$parent.ds = this.ds);
       }
-    },
-    props: []
+    }
   }
 </script>

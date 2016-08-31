@@ -37,10 +37,7 @@ export default router;
 router.map({
   'home': {
     name: 'home',
-    component: home,
-    subRoutes: {
-
-    }
+    component: home
   },
   'login': {
     name: 'login',
