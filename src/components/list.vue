@@ -5,7 +5,7 @@
       <li v-for="list in listData" track-by="id">
         <a v-link="{name:'list/detail', params: {userId: list.id}}" id="card">
           <img class="card-img-top" src="../assets/as.jpg">
-          <!--<img class="card-img-top" :src={list.img}>-->
+          <!--<img class="card-img-top" :src={{list.img}}>-->
           <div class="card-block">
             <h4 class="card-title">{{list.title}}</h4>
             <p class="card-text"><small class="text-muted">{{list.small}}</small></p>

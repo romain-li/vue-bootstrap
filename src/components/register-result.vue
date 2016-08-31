@@ -1,5 +1,5 @@
 <template>
   <div id="register-result">
-    <p>登录/注册成功</p>
+    <p>测试引入子组件</p>
   </div>
 </template>

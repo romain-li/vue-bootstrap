@@ -53,3 +53,17 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 > 
 > this.$children 访问子元素
 
+###父链
+
+> 使用$on()监听事件
+
+> 使用$emit()在它上面触发事件
+
+> 使用$dispatch()派发事件，时间沿着父链冒泡
+
+	子组件派发事件，父组件用event接收或者用v-on监听
+
+> 使用$broadcast()广播事件，事件向下传导给所有的后代
+
+> 定义v-ref可以在js里直接访问子组件
+
