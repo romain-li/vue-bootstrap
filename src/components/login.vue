@@ -37,6 +37,9 @@
   import test from './nav.vue'
   import router from '../main.js'
   export default {
+    ready () {     //当页面加载完成去请求
+//      console.log(this.$router)
+    },
     components: {
       test
     },
@@ -51,6 +54,9 @@
         userPaw: '123123'
       }
     },
+    route: {   //可以设置路由的钩子函数
+
+    },
     methods: {
       submit: function () {
         router.go({name: 'registerResult'});
@@ -58,6 +64,7 @@
       goRegisrer: function () {
         router.go({name: 'register'});
       }
-    }
+    },
+    props: []
   }
 </script>
